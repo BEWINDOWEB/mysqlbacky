@@ -17,16 +17,16 @@ wget "https://github.com/BEWINDOWEB/mysqlbacky/archive/master.zip"
 vi bwb_mysqlbacky_everyday.sh
 ```
 
-| 必填参数名 | 作用说明 | 备注 | 
-| - | - | 
-| mdpath | mysqldump路径 | 可以通过which mysqldump命令获得 | 
-| databasename | 需要备份的数据库名 |  | 
-| password | 数据库密码 |  |
+必填参数名 | 作用说明 | 备注 
+------------ | ------------- | -------------
+mdpath | mysqldump路径 | 可以通过which mysqldump命令获得 
+databasename | 需要备份的数据库名 |  
+password | 数据库密码 | 
 
-| 可选参数名 | 作用说明 | 备注 | 
-| - | - | 
-| user | 数据库用户名 | 默认root | 
-| hostname | 数据库所在服务器 | 默认localhost | 
+可选参数名 | 作用说明 | 备注 
+------------ | ------------- | -------------
+user | 数据库用户名 | 默认root 
+hostname | 数据库所在服务器 | 默认localhost 
 
 ```
 mdpath="/opt/mysql/server-5.6/bin/mysqldump" 	#mysqldump path
@@ -62,16 +62,16 @@ wget "https://github.com/BEWINDOWEB/mysqlbacky/archive/master.zip"
 vi bwb_mysqlbacky_everyday.sh
 ```
 
-| Required parameter name | function | Remarks | 
-| - | - | 
-| mdpath | mysqldump path | Can be obtained by the command "which mysqldump" | 
-| databasename | database name that needs to be backed up |  | 
-| password | database password |  |
+Required parameter name | function | Remarks
+------------ | ------------- | -------------
+mdpath | mysqldump path | Can be obtained by the command "which mysqldump" 
+databasename | database name that needs to be backed up |  
+password | database password |   
 
-| Optional parameter name | function | Remarks | 
-| - | - | 
-| user | database username | default = root | 
-| hostname | database server ip | default = localhost | 
+Optional parameter name | function | Remarks 
+------------ | ------------- | -------------
+user | database username | default = root 
+hostname | database server ip | default = localhost 
 
 ```
 mdpath="/opt/mysql/server-5.6/bin/mysqldump" 	#mysqldump path
