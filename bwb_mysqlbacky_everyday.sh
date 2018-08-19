@@ -14,8 +14,8 @@ Now=$(date +"%Y-%m-%d")
 File=${datapath}/bakmysql-$Now.sql 
 ${mdpath} --opt -u${user} -p${password} -h${hostname} ${databasename} --skip-lock-tables > $File
 SevenDays=$(date -d -7day  +"%Y-%m-%d") 
-if [ -f ${datapath}'old/bakmysql-$SevenDays.sql' ]; then
-    rm -rf ${datapath}'old/bakmysql-$SevenDays.sql' 
+if [ -f ${datapath}'old/bakmysql-'$SevenDays'.sql' ]; then
+    rm -rf ${datapath}'old/bakmysql-'$SevenDays'.sql' 
 fi
 
 
